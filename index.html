@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Sait Cloud Project</title>
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            
             background-color: #0f172a;
             color: white;
             text-align: center;
@@ -17,17 +13,7 @@
             margin-top: 80px;
         }
 
-        h1 {
-            color: #38bdf8;
-            font-size: 40px;
-        }
-
-        h2 {
-            color: #38bdf8;
-            font-size: 28px;
-        }
-
-        nav {
+        .nav {
             position: sticky;
             top: 20px;
             width: 40%;
@@ -36,20 +22,12 @@
             border: 2px solid #38bdf8;
             border-radius: 12px;
             padding: 15px;
-            z-index: 1000;
         }
 
-        nav a {
+        .nav a {
             color: #38bdf8;
+            margin: 0 10px;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: 0.2s;
-        }
-
-        nav a:hover {
-            color: white;
-            text-shadow: 0 0 8px #38bdf8;
         }
 
         .box {
@@ -58,90 +36,23 @@
             margin: 20px auto;
             width: 40%;
             border-radius: 12px;
-            transition: 0.3s;
-            animation: fadeUp 0.8s ease;
-        }
-
-        .box:hover {
-            box-shadow: 0 0 25px #38bdf8;
-            transform: scale(1.02);
-        }
-
-        .box a {
-            display: inline-block;
-            margin: 10px 10px 0 10px;
-            padding: 8px 15px;
-            border: 1px solid #38bdf8;
-            border-radius: 8px;
-            color: #38bdf8;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .box a:hover {
-            background-color: #38bdf8;
-            color: #0f172a;
-        }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
     </style>
+
 </head>
+
 <body>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</div>
 
-<div class="box" id="home">
+<div class="box">
     <h1>Sait - Cloud & DevOps Learner</h1>
-    <p>Building projects and learning AWS</p>
     <p>This website is running on AWS EC2</p>
-    <p>Deployed using NGINX</p>
-</div>
-
-<div class="box" id="about">
-    <h2>About Me</h2>
-    <p>Hi, I'm Sait. I'm a student learning Cloud and DevOps.</p>
-    <p>I built this website using AWS EC2 and NGINX.</p>
-    <p>I'm currently improving my skills in cloud technologies and building hands-on projects.</p>
-</div>
-
-<div class="box" id="skills">
-    <h2>Skills</h2>
-    <p>AWS EC2</p>
-    <p>NGINX</p>
-    <p>HTML & CSS Basics</p>
-    <p>GitHub Pages</p>
-    <p>Linux Basics</p>
-</div>
-
-<div class="box" id="projects">
-    <h2>Projects</h2>
-    <p><strong>AWS Portfolio Website</strong></p>
-    <p>Built and deployed a personal portfolio website using AWS EC2, NGINX, HTML, CSS and GitHub Pages.</p>
-    <p>
-        <a href="https://saitssy.github.io/my-first-website/" target="_blank">Live Demo</a>
-        <a href="https://github.com/saitssy/my-first-website" target="_blank">View Code</a>
-    </p>
-</div>
-
-<div class="box" id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:yayilmuhammedsaid@gmail.com">yayilmuhammedsaid@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/saitssy" target="_blank">github.com/saitssy</a></p>
 </div>
 
 </body>
